@@ -1,1 +1,0 @@
-const BaseUrl:String = "http://localhost:7090/api"

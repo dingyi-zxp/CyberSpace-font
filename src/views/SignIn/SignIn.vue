@@ -4,8 +4,7 @@
 import imgsUrl from "../../common/ImgsUrl.ts";
 import {ref} from "vue";
 import "./signIn.css"
-import axios from "axios";
-
+import {serverApiUrl, UrlController} from "../../common/UrlController.ts"
 const data = ref({
   logo: imgsUrl.Logo
 })
@@ -16,11 +15,16 @@ const userSignUpInfo = ref({
 })
 
 function SignInCheck() {
-  alert(userSignUpInfo.value.account)
+
+  UrlController.Post(
+      serverApiUrl.apiUrl(serverApiUrl.userApi.LOGIN),
+    userSignUpInfo.value
+  )
+/*  alert(userSignUpInfo.value.account)
   console.log("SignInCheck")
   axios({
     method: 'post',
-    url: 'http://localhost:7090/api/user_info/login_check',
+    url: URL,
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded'
     },
@@ -31,7 +35,7 @@ function SignInCheck() {
   })
       .then((val) => {
         console.log(val)
-      })
+      })*/
 }
 </script>
 
