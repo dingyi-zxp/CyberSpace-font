@@ -1,0 +1,108 @@
+.font-white {
+    color: #ffffff;
+}
+
+.frame {
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+.flex-logo {
+    display: flex;
+    width: auto !important;
+    height: 70px;
+    margin: 3% 0;
+    justify-content: center;
+}
+.form-frame{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.title-font-size {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.form-box{
+
+    margin:  13px auto;
+    padding: 13px 20px;
+    border-radius: 13px;
+    border-style: solid;
+    border-width: 1px;
+    flex-direction: column;
+}
+
+.form-font{
+    font-size: 14px;
+
+}
+
+.form-input-margin{
+    margin: 10px 0;
+}
+
+.input-box{
+    display: block;
+    width: 17vw;
+}
+.form-input{
+    border-radius: 6px;
+    height: 24px;
+    padding: 2px 4px;
+    box-shadow: 1px 1px;
+}
+
+.blue-font-small{
+    color: #0D6BDB;
+    font-size: small;
+}
+
+
+.position-right{
+    text-align: right;
+}
+
+.blue-font-small a:hover{
+    color: #0D6BDB;
+    text-decoration: none;
+}
+
+.blue-font-small a:link{
+
+    color: #0D6BDB;
+    text-decoration: none;
+}
+
+.blue-font-small a:visited{
+    color: #0D6BDB;
+    text-decoration: none;
+}
+
+.button-signIn{
+    margin: 1.5vh 0;
+    padding: 0.7vh 0;
+    background-color: #F596AA;
+    border-shadow: 0;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+}
+
+.button-signIn-text{
+    color: #fff;
+    font-size: 17px;
+}
+
+.button-signIn:hover{
+    transition: background-color 50ms;
+    background-color: #E16B8C;
+    cursor: pointer;
+}
