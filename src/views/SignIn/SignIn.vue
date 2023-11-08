@@ -5,6 +5,7 @@ import imgsUrl from "../../common/ImgsUrl.ts";
 import {ref} from "vue";
 import "./signIn.css"
 import {serverApiUrl, UrlController} from "../../common/UrlController.ts"
+import router from "../../router/router.ts";
 const data = ref({
   logo: imgsUrl.Logo
 })
@@ -20,28 +21,16 @@ function SignInCheck() {
       serverApiUrl.apiUrl(serverApiUrl.userApi.LOGIN),
     userSignUpInfo.value
   )
-/*  alert(userSignUpInfo.value.account)
-  console.log("SignInCheck")
-  axios({
-    method: 'post',
-    url: URL,
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded'
-    },
-    data: {
-      account: userSignUpInfo.value.account,
-      password: userSignUpInfo.value.password
-    }
-  })
-      .then((val) => {
-        console.log(val)
-      })*/
+}
+
+function toHome (){
+  router.push("/")
 }
 </script>
 
 <template>
   <div class="frame font-white">
-    <div class="flex-logo">
+    <div class="flex-logo" @click="toHome">
       <img :src="data.logo">
     </div>
 

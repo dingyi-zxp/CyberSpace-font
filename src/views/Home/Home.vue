@@ -18,7 +18,6 @@ import Header from "../../components/Header/index.vue"
   border: none;
   background-size: cover;
   object-fit: cover;
-  top: 0;
   height: 100vh;
   background-image: url(https://ssl-pubpic.51yund.com/1365545168.jpg);
   background-repeat: no-repeat;

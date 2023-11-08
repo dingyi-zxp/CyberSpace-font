@@ -3,6 +3,9 @@ import './index.css'
 
 export default {
   methods: {
+    toSignIn(){
+      this.$router.push('/signin')
+    },
     toSignUp(){
       this.$router.push('/signup')
     }
@@ -25,8 +28,8 @@ export default {
       </div>
 
       <div class ='flex-nav-item'>
-        <div class='nav-item cursor-point' @click="toSignUp">Sign in</div>
-        <div class='nav-item cursor-point'>Sign up</div>
+        <div class='nav-item cursor-point' @click="toSignIn">Sign in</div>
+        <div class='nav-item cursor-point' @click="toSignUp" style="border: solid white; border-width: 1px; padding: 3px 5px; border-radius:6px;" >Sign up</div>
       </div>
     </div>
   </div>
