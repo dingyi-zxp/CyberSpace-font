@@ -4,6 +4,7 @@ import Imgs from "../../common/ImgsUrl.ts"
 import {ref} from "vue";
 import {emailVerify, nameVerify, passwordVerify} from "../../common/Verify.ts";
 import router from "../../router/router.ts";
+import { UrlController,serverApiUrl } from "../../common/UrlController.ts"
 
 function toHome (){
   router.push("/")
@@ -18,13 +19,24 @@ const nickNameVerifyVal = ref(true)
 const password = ref("")
 const passwordVerifyVal = ref(true)
 
+
+function signUpUser(){
+  UrlController.Post(
+      serverApiUrl.apiUrl(serverApiUrl.userApi.SIGNUP),
+      {
+        email:email.value,
+        password:password.value,
+        nickName:nickName.value
+      }
+  )
+}
 </script>
 
 <template>
   <div class="frame">
     <div class="flex-right-left padding-suqen background-grey ">
       <div class="flex-size-logo" style="cursor: pointer" @click="toHome">
-        <img src="https://ssl-pubpic.51yund.com/1365545192.jpeg"/>
+        <img src="https://ssl-pubpic.51yund.com/1365545192.jpeg" alt="logo"/>
       </div>
 
       <div class="font-letter-spacing-2 font-green-3 font-signin-right">
@@ -49,7 +61,7 @@ const passwordVerifyVal = ref(true)
           </div>
           <div class="margin5"></div>
           <div class="flex-input03">
-            <img :src="Imgs.leftArrow"/>
+            <img  alt="leftArrow" :src="Imgs.leftArrow"/>
             <input class="input03" type="text" @blur="emailVerifyVal = emailVerify(email)" v-model="email"/>
           </div>
           <div v-if="!emailVerifyVal" class="error01 margin5">
@@ -63,7 +75,7 @@ const passwordVerifyVal = ref(true)
           </div>
           <div class="margin5"></div>
           <div class="flex-input03">
-            <img :src="Imgs.leftArrow"/>
+            <img alt="leftArrow" :src="Imgs.leftArrow"/>
             <input class="input03" type="text" @blur="nickNameVerifyVal = nameVerify(nickName)" v-model="nickName"/>
           </div>
           <div v-if="!nickNameVerifyVal" class="error01 margin5">
@@ -77,7 +89,7 @@ const passwordVerifyVal = ref(true)
           </div>
           <div class="margin5"></div>
           <div class="flex-input03">
-            <img :src="Imgs.leftArrow"/>
+            <img alt="leftArrow" :src="Imgs.leftArrow"/>
             <input class="input03" type="password" @blur="passwordVerifyVal = passwordVerify(password)"
                    v-model="password"/>
           </div>
@@ -88,7 +100,7 @@ const passwordVerifyVal = ref(true)
           <!--          Sign UP button-->
           <div class="margin-next26 ">
             <div class="flex-center">
-              <button class="button03 font-letter-spacing-2"> Sign Up</button>
+              <button class="button03 font-letter-spacing-2" @click="signUpUser"> Sign Up</button>
             </div>
           </div>
         </div>

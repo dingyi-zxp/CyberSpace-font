@@ -4,12 +4,12 @@ const baseUrl: string = "http://localhost:7090/api"
 
 const apiPrefix = {
     user: '/user_info',
-
 }
 
 const userApi = {
 
-    LOGIN: apiPrefix.user + "/login_check"
+    LOGIN: apiPrefix.user + "/login_check",
+    SIGNUP: apiPrefix.user + "/signup"
 }
 
 function apiUrl(method: string): string {
