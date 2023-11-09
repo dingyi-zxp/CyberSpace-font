@@ -107,3 +107,16 @@
     color: #EA4AAA;
     background-color: #00CFC8;
 }
+
+.flex-left {
+    display: flex;
+    align-items: center;
+}
+
+.margin03{
+    margin: 0 3px;
+}
+
+a:active {
+    text-emphasis: none;
+}

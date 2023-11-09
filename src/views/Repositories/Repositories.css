@@ -1,0 +1,59 @@
+body{
+    background-color: #0C162D;
+}
+.margin20p{
+    margin: 0 13%;
+}
+
+.flex-grow1{
+    flex-grow: 1;
+    height: 100%;
+
+}
+
+.flex-grow2{
+    flex-grow: 2;
+    width: 100% !important;
+    height: 100%;
+    background-color: #0D6BDB;
+
+}
+
+.flex-box{
+    width: 100% !important;
+    display: flex;
+}
+.img-radius{
+    border-radius: 50%;
+    width: 100%  !important;
+    height: 300px;
+    object-fit: cover;
+}
+
+.font-color-white{
+    color: #ffffff;
+}
+
+.button-pink {
+    background-color: #EA4AAA;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.padding1260{
+    padding: 12px 60px;
+}
+
+.a-pink :hover{
+    color: #00CFC8;
+}
+
+.a-pink :link{
+    color: #EA4AAA;
+}
+
+.a-pink:visited{
+    color: #EA4AAA;
+}
+
