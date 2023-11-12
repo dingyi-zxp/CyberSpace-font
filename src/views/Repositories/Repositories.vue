@@ -1,21 +1,26 @@
 <script setup lang="ts">
 import "./Repositories.css"
+import RepoItem from "../../components/RepositoriesItem/RepositoriesItem.vue"
 import {ref} from "vue";
+import {toPage, URLS} from "../../common/ToPages.ts";
 
 const nickName = ref("Neko")
 
 const followers = ref(0)
 const following = ref(0)
 
+const toEditProfile = () => {
+  toPage(URLS.EDITPROFILE)
+}
 </script>
 
 <template>
-<div class="flex-center margin20p">
+<div class=" flex-center margin20p">
 <!--  show user info -->
   <div class="flex-grow1">
 <!--    avtar-->
     <div class="flex-box">
-      <img alt="" class="img-radius" src="https://ssl-pubpic.51yund.com/1366198803.png">
+      <img alt="" class="img-radius"  src="https://ssl-pubpic.51yund.com/1366198803.png">
     </div>
 
 <!--    User Info-->
@@ -27,7 +32,7 @@ const following = ref(0)
 <!--    Edit profile-->
     <div class="margin-next13"></div>
     <div class="flex-center" >
-      <button @click="() => {console.log('hhh')}" class="button-pink padding1260">Edit Profile</button>
+      <button @click="toEditProfile" class="button-pink padding1260">Edit Profile</button>
     </div>
 
 <!--    followers and following -->
@@ -46,7 +51,7 @@ const following = ref(0)
     </div>
   </div>
   <div class="flex-grow2">
-    22
+    <RepoItem></RepoItem>
   </div>
 </div>
 </template>

@@ -3,7 +3,7 @@ import SignIn from "../views/SignIn/SignIn.vue"
 import Home from "../views/Home/Home.vue";
 import SignUp from "../views/SignUp/SignUp.vue";
 import Repositories from "../views/Repositories/Repositories.vue";
-
+import Setting from "../views/EditProfile/Setting.vue";
 const routes = [
     {
         path: '/',
@@ -20,6 +20,10 @@ const routes = [
     {
         path:"/repositories",
         component: Repositories
+    },
+    {
+        path:"/setting",
+        component: Setting
     }
 ]
 const router = createRouter({

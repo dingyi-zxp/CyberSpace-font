@@ -1,0 +1,56 @@
+.font-grey-3{
+    color: #DEE3E8;
+}
+.font-blue-01{
+    color: #0969DA;
+}
+
+.repoItem{
+    padding: 1.2vw 0;
+    border-bottom: 1px solid #D8DEE4;
+}
+
+
+.repoName {
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.status1{
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 14px;
+    border: 1px solid #57606A;
+    padding: 2px 7px;
+    border-radius: 12px;
+}
+
+.margin-left10{
+    margin-left: 10px;
+}
+
+.label-shape{
+    top: 1px;
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px;
+    background-color: #EA4AAA;
+}
+
+.margin-left5{
+    margin-left: 5px;
+}
+
+.margin-left15{
+    margin-left: 15px;
+}
+
+.star1{
+    background-color: #57606A;
+    padding: 2px 7px;
+    border: 1px solid #57606A;
+    border-radius: 6px;
+}

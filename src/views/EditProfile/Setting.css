@@ -1,0 +1,43 @@
+.margin2030 {
+    margin:30px;
+}
+
+.font-grey-2 {
+    color: #C9D1D9;
+}
+
+.font-size-big1{
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.margin-left20{
+    margin-left: 20px;
+}
+
+.flex-direction-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.button-grey{
+    border: none;
+    background-color: #21262D;
+    color: #B4BCC3;
+    border-radius: 6px;
+}
+
+.flex-align-item-cent{
+    display: flex;
+    align-items: center;
+}
+
+.padding1220{
+    padding: 12px 20px;
+}
