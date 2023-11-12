@@ -1,0 +1,31 @@
+.flex-row{
+}
+.flex-justify-center {
+    display: flex;
+    justify-content: center;
+}
+.lattice-padding{
+}
+
+.img-basic{
+    object-fit: cover;
+    width: 60% !important;
+    height: auto;
+}
+
+.margintop10{
+    margin-top: 10px;
+}
+
+.margintop2{
+    margin-top: 2px;
+}
+
+.file-name-font{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.file-updated-font{
+    font-size: 14px;
+}

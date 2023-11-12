@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import "./RepositoriesItem.css"
 import {ref, watch} from "vue";
+import {toPage, URLS} from "../../common/ToPages.ts";
 
 const repoName = ref("Movie");
 const label = ref("m4")
@@ -20,6 +21,10 @@ watch(
 
     }
 )
+
+const toRepoProject = () => {
+  toPage(URLS.REPO_PROJECT)
+}
 </script>
 
 <template>
@@ -36,7 +41,7 @@ watch(
         <div class="flex-right-left">
           <div class="flex-align-item-cent">
             <!--        repoName-->
-            <a class="repoName font-blue-01" href="">{{ repoName }}</a>
+            <a class="repoName font-blue-01" @click="toRepoProject">{{ repoName }}</a>
 
             <!--        status-->
             <div class="margin-left10"></div>

@@ -4,6 +4,7 @@ import Home from "../views/Home/Home.vue";
 import SignUp from "../views/SignUp/SignUp.vue";
 import Repositories from "../views/Repositories/Repositories.vue";
 import Setting from "../views/EditProfile/Setting.vue";
+import RepoProject from "../views/RepoProject/RepoProject.vue";
 const routes = [
     {
         path: '/',
@@ -24,6 +25,10 @@ const routes = [
     {
         path:"/setting",
         component: Setting
+    },
+    {
+        path:"/repopoject",
+        component: RepoProject
     }
 ]
 const router = createRouter({

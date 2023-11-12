@@ -1,0 +1,16 @@
+.margin7p{
+    margin: 0 7%;
+}
+
+.img-small {
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.font-project-userName {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}

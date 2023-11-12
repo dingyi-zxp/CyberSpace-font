@@ -10,8 +10,9 @@ const followers = ref(0)
 const following = ref(0)
 
 const toEditProfile = () => {
-  toPage(URLS.EDITPROFILE)
+  toPage(URLS.EDIT_PROFILE)
 }
+
 </script>
 
 <template>
