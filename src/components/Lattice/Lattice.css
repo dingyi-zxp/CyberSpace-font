@@ -9,7 +9,7 @@
 
 .img-basic{
     object-fit: cover;
-    width: 60% !important;
+    width: 70% !important;
     height: auto;
 }
 
@@ -28,4 +28,35 @@
 
 .file-updated-font{
     font-size: 14px;
+}
+
+.margintb5{
+    margin: 5px 0;
+}
+
+.paddingtb5 {
+    z-index: 1;
+    padding: 5px 0;
+}
+.LatticeObject {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.LatticeObject:hover{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: #21262D;
+    opacity: 0.1;
+    border-radius: 15px;
+}
+
+.absolute-left {
+    position: absolute;
+    float: left;
+}
+
+.transition1:hover {
+    transition:3s;
 }
